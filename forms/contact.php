@@ -8,7 +8,13 @@
 
   // Replace contact@example.com with your real receiving email address
   $receiving_email_address = 'graphicsdose@gmail.com';
+$to = "graphicsdose@gmail.com";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: webmaster@graphicdose.com" . "\r\n" .
+"CC: graphicsdose@gmail.com";
 
+mail($to,$subject,$txt,$headers);
 
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
@@ -29,12 +35,6 @@
   */
 
  
-$to = "graphicsdose@gmail.com";
-$subject = "My subject";
-$txt = "Hello world!";
-$headers = "From: webmaster@graphicdose.com" . "\r\n" .
-"CC: graphicsdose@gmail.com";
 
-mail($to,$subject,$txt,$headers);
 
 ?>
