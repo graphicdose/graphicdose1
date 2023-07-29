@@ -28,9 +28,13 @@
   );
   */
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+ 
+$to = "graphicsdose@gmail.com";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: webmaster@graphicdose.com" . "\r\n" .
+"CC: graphicsdose@gmail.com";
 
-  echo $contact->send();
+mail($to,$subject,$txt,$headers);
+
 ?>
