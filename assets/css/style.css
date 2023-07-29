@@ -103,6 +103,10 @@ a:hover {
 .overlay-mf {
   background-color: #0078ff;
 }
+@media (max-width: 1200px)
+.tokyo_tm_portfolio {
+    padding-top: 130px;
+}
 
 .overlay-mf {
   position: absolute;
